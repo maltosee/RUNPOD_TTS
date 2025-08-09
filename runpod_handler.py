@@ -13,6 +13,9 @@ def chunked_audio_generator(text, voice="aryan_default"):
     Test generator that loads a real WAV file and chunks it
     """
     print(f"🎯 Starting real audio test for: '{text}' (voice: {voice})")
+
+    print(f"🚨 CHUNKED GENERATOR CALLED: {text[:50]}...")
+    print(f"🚨 STARTING DOWNLOAD TEST")
     
     # Download a sample WAV file for testing
     try:
@@ -151,3 +154,4 @@ print("   1. Download a real WAV file")
 print("   2. Split it into 6 chunks")
 print("   3. Stream as hex-encoded audio")
 print("   4. Test the full audio pipeline")
+
